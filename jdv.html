@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        #mostrador{
+            margin: auto;
+            margin-top: 90px;
+            width: 250px;
+            height: 60px;
+        }
+
+        .espaco{
+            width: 90px;
+            height: 90px;
+            border: 2px solid #000;
+            float: left;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .tabuleiro{
+            width: 300px;
+            height: 300px;
+            margin: auto;
+        }
+      
+    </style>
+</head>
+
+<body>
+    
+    <div id="mostrador">
+        <p style="float: left; margin-right: 15px;"> Vez do Jogador:</p>
+        <img src="" border="0" height="50">
+                
+    </div>
+
+
+    
+    <div class="tabuleiro">
+        <div id="a1" class="espaco" jogada=""></div>
+        <div id="a2" class="espaco" jogada=""></div>
+        <div id="a3" class="espaco" jogada=""></div>
+
+        <div id="b1" class="espaco" jogada=""></div>
+        <div id="b2" class="espaco" jogada=""></div>
+        <div id="b3" class="espaco" jogada=""></div>
+
+        <div id="c1" class="espaco" jogada=""></div>
+        <div id="c2" class="espaco" jogada=""></div>
+        <div id="c3" class="espaco" jogada=""></div>
+
+    </div>
+
+    
+    
+    <script type="text/javascript" src="jogo.js"></script>
+</body>
+</html>
