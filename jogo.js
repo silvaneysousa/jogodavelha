@@ -2,6 +2,8 @@ const p1 = "X";
 const p2 = "O";
 var playTime = p1;
 var gameOver = false;
+//var cpu = document.getElementById('cpu').checked;
+
 
 atualizaMostrador();
 inicializaEspacos();
@@ -45,6 +47,14 @@ function inicializaEspacos() {
     }
 }
 
+/* if (cpu && p2) {
+    inicializaEspacos(jogadaDoCPU());
+}
+
+function jogadaDoCPU() {
+    return 
+} */
+
 async function verificaVencedor() {
 
     var a1 = document.getElementById("a1").getAttribute("jogada");
@@ -86,10 +96,12 @@ async function verificaVencedor() {
         await sleep(50);
 
         if (vencedor == Velha) {
-        alert("O jogo deu velha. Reinicie a partida!");
+        alert("O jogo deu velha. A partida será reiniciada!");
+            location.reload();
         } else if (vencedor != Velha) {
     
         alert("O GANHADOR É O: '" + vencedor + "'");
+            location.reload();
         }
     }
 }
